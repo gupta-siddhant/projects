@@ -15,27 +15,28 @@ Follow the instructions below to set up and run the Data Converter server.
 
 ### Prerequisites
 
-- Scala 2.12
-- Akka HTTP
-- Kafka
+- Scala 2.12 and Java 11
+- sbt 1.9.2
+- Akka HTTP, Akka Actor and Akka Stream (Corresponding libraries)
+- Kafka - Local, msk or confluent kafka cluster, along with kafka-client and serialization/deserialization libraries
 - Avro
-- S3 Bucket (if using batchReq route)
+- S3 Bucket (if using batchReq route) - The ec2 instance on which data converter is deployed should have the read access to the s3 file shared via batchReq route
 
 ### Installation
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/data-converter.git
+   git clone https://github.com/gupta-siddhant/projects.git
    ```
 
 2. Navigate to the project directory:
    ```bash
-   cd data-converter
+   cd projects/data-converter
    ```
 
 3. Build the project:
    ```bash
-   sbt compile
+   sbt clean compile assembly
    ```
 
 ### Configuration
@@ -46,7 +47,7 @@ Make sure to configure the Kafka broker details and other necessary settings in 
 
 To start the Data Converter server, run the following command:
 ```bash
-sbt run
+java -Dconfig.file=/<path-to>/application.conf -jar immo-DataConverter-1.0.0.jar
 ```
 
 ## Routes

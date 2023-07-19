@@ -4,7 +4,8 @@ ThisBuild / scalaVersion := "2.12.18"
 
 lazy val root = (project in file("."))
   .settings(
-    name := "data-converter"
+    name := "data-converter",
+    assemblyJarName := s"immo-DataConverter-${version.value}.jar"
   )
 
 libraryDependencies += "com.typesafe" % "config" % "1.4.2"
@@ -23,4 +24,16 @@ libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-actor"  % "2.8.3"
 )
 
+enablePlugins(AssemblyPlugin)
+
+assemblyMergeStrategy := {
+  case PathList("META-INF", xs@_*) =>
+    xs map {_.toLowerCase} match {
+      case "services" :: xs => MergeStrategy.filterDistinctLines
+      case _ => MergeStrategy.discard
+    }
+  case "application.conf" => MergeStrategy.concat
+  case "reference.conf" => MergeStrategy.concat
+  case x => MergeStrategy.first
+}
 
