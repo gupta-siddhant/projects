@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <resident>
+    <residentId>1</residentId>
+    <residentName>John Doe</residentName>
+    <preferredCountry>USA</preferredCountry>
+    <preferredState>California</preferredState>
+    <preferredCity>Los Angeles</preferredCity>
+    <budget>5000.00</budget>
+  </resident>
+  <resident>
+    <residentId>2</residentId>
+    <residentName>Jane Smith</residentName>
+    <preferredCountry>Canada</preferredCountry>
+    <preferredState>Ontario</preferredState>
+    <preferredCity>Toronto</preferredCity>
+    <budget>4500.00</budget>
+  </resident>
+  <resident>
+    <residentId>3</residentId>
+    <residentName>Michael Johnson</residentName>
+    <preferredCountry>UK</preferredCountry>
+    <preferredState>England</preferredState>
+    <preferredCity>London</preferredCity>
+    <budget>6000.00</budget>
+  </resident>
+  <resident>
+    <residentId>4</residentId>
+    <residentName>Lisa Brown</residentName>
+    <preferredCountry>Australia</preferredCountry>
+    <preferredState>New South Wales</preferredState>
+    <preferredCity>Sydney</preferredCity>
+    <budget>5500.00</budget>
+  </resident>
+  <resident>
+    <residentId>5</residentId>
+    <residentName>David Lee</residentName>
+    <preferredCountry>Germany</preferredCountry>
+    <preferredState>Bavaria</preferredState>
+    <preferredCity>Munich</preferredCity>
+    <budget>4800.00</budget>
+  </resident>
+  <resident>
+    <residentId>6</residentId>
+    <residentName>Susan Wang</residentName>
+    <preferredCountry>China</preferredCountry>
+    <preferredState>Beijing</preferredState>
+    <preferredCity>Beijing</preferredCity>
+    <budget>5200.00</budget>
+  </resident>
+  <resident>
+    <residentId>7</residentId>
+    <residentName>Thomas Johnson</residentName>
+    <preferredCountry>USA</preferredCountry>
+    <preferredState>New York</preferredState>
+    <preferredCity>New York City</preferredCity>
+    <budget>4800.00</budget>
+  </resident>
+  <resident>
+    <residentId>8</residentId>
+    <residentName>Emily White</residentName>
+    <preferredCountry>Canada</preferredCountry>
+    <preferredState>British Columbia</preferredState>
+    <preferredCity>Vancouver</preferredCity>
+    <budget>5100.00</budget>
+  </resident>
+  <resident>
+    <residentId>9</residentId>
+    <residentName>Robert Kim</residentName>
+    <preferredCountry>South Korea</preferredCountry>
+    <preferredState>Seoul</preferredState>
+    <preferredCity>Seoul</preferredCity>
+    <budget>5800.00</budget>
+  </resident>
+  <resident>
+    <residentId>10</residentId>
+    <residentName>Mary Johnson</residentName>
+    <preferredCountry>USA</preferredCountry>
+    <preferredState>Florida</preferredState>
+    <preferredCity>Miami</preferredCity>
+    <budget>5200.00</budget>
+  </resident>
+</root>

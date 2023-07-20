@@ -46,7 +46,7 @@ object DataMeshKafkaProducer {
     } catch {
       case e: Exception =>
         logger.error(s"Error while converting base64 encoded json to avro record - ${e.getMessage}")
-
+        return complete(StatusCodes.InternalServerError, s"Unsupported base64 string")
     }
 
     try {

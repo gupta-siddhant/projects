@@ -1,0 +1,82 @@
+[
+  {
+    "residentId": 1,
+    "residentName": "John Doe",
+    "preferredCountry": "USA",
+    "preferredState": "California",
+    "preferredCity": "Los Angeles",
+    "budget": 5000.0
+  },
+  {
+    "residentId": 2,
+    "residentName": "Jane Smith",
+    "preferredCountry": "Canada",
+    "preferredState": "Ontario",
+    "preferredCity": "Toronto",
+    "budget": 4500.0
+  },
+  {
+    "residentId": 3,
+    "residentName": "Michael Johnson",
+    "preferredCountry": "UK",
+    "preferredState": "England",
+    "preferredCity": "London",
+    "budget": 6000.0
+  },
+  {
+    "residentId": 4,
+    "residentName": "Lisa Brown",
+    "preferredCountry": "Australia",
+    "preferredState": "New South Wales",
+    "preferredCity": "Sydney",
+    "budget": 5500.0
+  },
+  {
+    "residentId": 5,
+    "residentName": "David Lee",
+    "preferredCountry": "Germany",
+    "preferredState": "Bavaria",
+    "preferredCity": "Munich",
+    "budget": 4800.0
+  },
+  {
+    "residentId": 6,
+    "residentName": "Susan Wang",
+    "preferredCountry": "China",
+    "preferredState": "Beijing",
+    "preferredCity": "Beijing",
+    "budget": 5200.0
+  },
+  {
+    "residentId": 7,
+    "residentName": "Thomas Johnson",
+    "preferredCountry": "USA",
+    "preferredState": "New York",
+    "preferredCity": "New York City",
+    "budget": 4800.0
+  },
+  {
+    "residentId": 8,
+    "residentName": "Emily White",
+    "preferredCountry": "Canada",
+    "preferredState": "British Columbia",
+    "preferredCity": "Vancouver",
+    "budget": 5100.0
+  },
+  {
+    "residentId": 9,
+    "residentName": "Robert Kim",
+    "preferredCountry": "South Korea",
+    "preferredState": "Seoul",
+    "preferredCity": "Seoul",
+    "budget": 5800.0
+  },
+  {
+    "residentId": 10,
+    "residentName": "Mary Johnson",
+    "preferredCountry": "USA",
+    "preferredState": "Florida",
+    "preferredCity": "Miami",
+    "budget": 5200.0
+  }
+]

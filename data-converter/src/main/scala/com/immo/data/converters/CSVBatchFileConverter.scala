@@ -13,7 +13,14 @@ class CSVBatchFileConverter extends BatchFileConverter {
 
     val dataRows = parser.getRecords.asScala.toList.map {
       record =>
-        Schema(record.get(0), record.get(1).toInt)
+        Schema(
+          record.get(0).toInt,
+          record.get(1),
+          record.get(2),
+          record.get(3),
+          record.get(4),
+          record.get(5).toDouble
+        )
     }
     parser.close()
 

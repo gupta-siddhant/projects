@@ -11,11 +11,15 @@ class XMLBatchFileConverter extends BatchFileConverter {
   override def convert(filePath: String): Seq[Record] = {
     val xmlData = XML.load(s3InputStream(filePath))
 
-    val dataRows = (xmlData \ "person").map {
+    val dataRows = (xmlData \ "resident").map {
       row =>
-        val name = (row \ "name").text.trim
-        val age = (row \ "age").text.trim.toInt
-        Schema(name, age)
+        val id = (row \ "residentId").text.trim.toInt
+        val name = (row \ "residentName").text.trim
+        val country = (row \ "preferredCountry").text.trim
+        val state = (row \ "preferredState").text.trim
+        val city = (row \ "preferredCity").text.trim
+        val budget = (row \ "budget").text.trim.toDouble
+        Schema(id, name, country, state, city, budget)
     }
 
     val avroRecords: Seq[Record] = dataRows.map {
