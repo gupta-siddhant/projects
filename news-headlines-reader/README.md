@@ -10,7 +10,7 @@ To run this project, you need to have Python 3.x installed on your system. If yo
 
 1. Open your terminal or command prompt.
 
-2. Use the following command to install Flask and requests:
+2. Use the following command to install required dependencies:
 
    ```bash
    pip install Flask requests
@@ -44,7 +44,7 @@ For Windows users, the `gtts` library requires the `mpg321` command-line player 
 
    ```bash
    git clone <repository-url>
-   cd text-to-speech-gtts
+   cd news-headlines-reader
    ```
 
 2. Open the `app.py` file in a text editor.
@@ -63,11 +63,11 @@ For Windows users, the `gtts` library requires the `mpg321` command-line player 
    python app.py
    ```
 
-6. Open your web browser and go to [http://localhost:5000/](http://localhost:5000/).
+7. Open your web browser and go to [http://localhost:5000/](http://localhost:5000/).
 
-7. Enter the text you want to convert to speech and click the "Play" button.
+8. Enter the text you want to convert to speech and click the "Play" button.
 
-8. The audio will start playing, and you should be able to hear the speech.
+9. The audio will start playing, and you should be able to hear the speech.
 
 ## Running on Local
 
