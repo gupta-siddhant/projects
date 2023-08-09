@@ -15,6 +15,7 @@ To run this project, you need to have Python 3.x installed on your system. If yo
    ```bash
    pip install Flask requests
    pip install gtts
+   pip install mysql-connector-python
    ```
 
 ### Generate News API Key
@@ -50,9 +51,13 @@ For Windows users, the `gtts` library requires the `mpg321` command-line player 
 
 3. Replace `'YOUR_API_KEY'` with your actual News API key obtained earlier.
 
-4. Save the file and close the text editor.
+4. Replace `'app.secret_key'` with any secret key of your liking.
 
-5. Run the Flask app:
+5. Replace the placeholder fields of `'db_config'` for db connection.
+
+5. Save the file and close the text editor.
+
+6. Run the Flask app:
 
    ```bash
    python app.py
@@ -63,6 +68,23 @@ For Windows users, the `gtts` library requires the `mpg321` command-line player 
 7. Enter the text you want to convert to speech and click the "Play" button.
 
 8. The audio will start playing, and you should be able to hear the speech.
+
+## Running on Local
+
+1. Create a table named users using the following mysql command -
+   ```bash
+   create table users (username varchar(255), password varchar(255));
+   ```
+
+2. If you are running on local `'db_config'` should look like this -
+   ```bash
+   db_config = {
+      'host': 'localhost',
+      'user': '<username>',
+      'password': '<password>',
+      'database': '<db>'
+   }
+   ```
 
 ## Troubleshooting
 
