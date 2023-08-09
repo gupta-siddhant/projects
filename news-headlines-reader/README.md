@@ -13,9 +13,9 @@ To run this project, you need to have Python 3.x installed on your system. If yo
 2. Use the following command to install required dependencies:
 
    ```bash
-   pip install Flask requests
-   pip install gtts
-   pip install mysql-connector-python
+   python3 -m pip install Flask requests
+   python3 -m pip install gtts
+   python3 -m pip install mysql-connector-python
    ```
 
 ### Generate News API Key
@@ -60,7 +60,7 @@ For Windows users, the `gtts` library requires the `mpg321` command-line player 
 6. Run the Flask app:
 
    ```bash
-   python app.py
+   python3 app.py
    ```
 
 7. Open your web browser and go to [http://localhost:5000/](http://localhost:5000/).
